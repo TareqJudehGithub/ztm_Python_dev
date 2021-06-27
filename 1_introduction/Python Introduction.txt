@@ -1,0 +1,238 @@
+What is a programming language? It is a set of instructions we give a translator, which
+can be either a compiler or interpreter. These translators allow us to give instructions to
+machines.
+
+xPython is a programming language, invented by Guido van Rossum in 1991.
+Python 3 was first introduced in 2008.
+Python 2 stopped being maintained and supported in 2020.
+
+compiler: converts source code to machine code.
+translates all lines of a program to a file (usually called
+binary) and executes and whole file at once.
+
+Interpreter: translates line by line, and execute the line
+before going to the next line.
+ - Python interpreter is a program written in C, to read you python file and run it on a machine.
+ - The Python interpreter creates a 'bite' code (we don't see it, it's behind the scene).
+ - After that,the Python interpreter uses the CPython virtual machine (VM) to run the code, and
+   then this code, will run on our machine.
+
+
+
+Python web dev
+2 popular libraries: Django and Flask  
+     Both are good for REST APIs
+
+ASGI vs WSGI library
+web server gateway interface(WSGI)
+Still in early stages: (ASGI) for Asyncronuous tasks
+
+
+Coding in Python
+
+file.py   => python file
+
+
+> name = input("What is your name? ")
+> print( "Hellooo, " + name+"!" )
+
+Why are there so many programming languages?
+every language has its pros and cons
+We can't build a house by a single hammer, but we need more
+tools to finish building up the house.
+
+
+How Python exactly works?
+Python code is translated into intermediate code,
+which has to be executed by a virtual machine, known as the PVM,
+the Python Virtual Machine. This is a similar approach to the
+one taken by Java. There is even a way of translating Python 
+programs into Java byte code for the Java Virtual Machine (JVM).
+
+Python is an interpreted, high-level, general-purpose programming language.
+ It is is dynamically typed and garbage-collected.
+
+In order to master any programming language:
+     - Understand that language terms.
+     - Data type. What sort of data that language hold.
+     - Actions. Performing Actions (like print() input())
+     - Best Practices. 
+
+Python Data Types
+
+
+  A data type is a value.
+
+int       i.e num = 2
+float     i.e num = 2.5
+bool      i.e sunny = True
+str       i.e first_name = "John"
+list      i.e basket = ["Apples", "Oranges", "Banana"]
+tuple     i.e basket = ("Apples", "Oranges", "Banana")
+set       i.e basket = {"Apples", "Oranges", "Banana"}
+dict      i.e basket = {
+               {
+                    "dairy": ["Milk", "Yougurt", "White Cheese"],
+                    "Fruits": ["Apples", "Oranges", "Banana"],
+                    "bread": "Brown Toast"
+               }
+          }
+
+
+# Classes => custom types
+
+# Specialized Data types
+
+None  # data type   like null or 0.. the absence of value.
+complex  # used for numbers, but it is rarely used.
+
+# bin  convernt decimal numbers to binary
+print(bin(7))
+
+print(int(0b111)) # convert a binary number back to decimal.
+
+#int
+
+# print(type(2 + 4))
+# print(type(2 * 4))
+# print(type(9 / 2))
+
+# print(type( 5 + 3))
+
+# to the power of
+# print( 2 ** 3) 
+
+# double divide => 
+# print( 8 // 7)
+
+# Module.   represent the remainder of the division
+
+# print( 5 % 4)
+# print( 6 % 4)
+# print(9 % 5)
+
+# Math functions: rounds the number
+
+# print(round(3.9))
+
+# # abs  : returns an absolute value (no negatives)
+# print(abs(-20))
+
+# # Operator precedence 
+# # ()
+# print(20 + (3 * 4)) 
+# ## **
+# print((20 - 3) + 2 **2)
+# ## + -
+# print(5 - 2 + 5 + 1)
+
+# Exercise:
+# Guess the output of each answer before you click RUN
+# Try to write down your answer before and see how you do... keep it mind I made it a little tricky for you :)
+
+print((5 + 4) * 10 / 2)
+# 9 * 5 = 45
+print(((5 + 4) * 10) / 2)
+# 90 / 2 = 45
+print((5 + 4) * (10 / 2))
+# 9 * 5 = 45
+print(5 + (4 * 10) / 2)
+# 5 + 20 = 25
+print(5 + 4 * 10 // 2)
+# 5 + 40 // 2 = 25
+
+Variables are way for us to store information (data);
+
+snake_case.  example:  user_iq
+Starts with lowercase or underscore
+Letter, number, underscores
+Case sensitive
+Cannot asign key words. # highlighted (colred) variable are key words
+Variable should be meaningful
+
+
+# constants
+     Best practice for declaring a constant:
+          - UPPERCASE for constants. Example:
+          PI = 3.14
+          - Keep constants Variables in a seperate file, and import them.
+          Example:
+          file: constants.py
+               
+               COLOR
+               USERS
+
+          file: main.py
+          import constants.PI 
+          import constants.USERS
+          import constants.COLOR
+
+          print(USER + " likes " + COLOR)
+
+
+
+
+# __ 
+# __ are also key words
+
+
+a, b, c = 1, 2, 3
+print(a)
+print(b)
+print(c)
+
+
+Expressions, Statements, and actions
+     Let's take the following example:
+     iq = 100
+     user_age = iq / 5
+
+     user_age = iq / 5  This is a statement.. that perform some sort of action.
+     iq / 5             This is an Expression.. a piece of code that produces a value.
+ 
+augmented assignment operator
+
+some_value = 5
+
+some_value = 5 + 2
+
+print(some_value)
+
+
+some_value += 2
+print(some_value)
+
+some_value -= 2
+print(some_value)
+
+some_value *= 2
+print(some_value)
+
+some_value /= 2
+print(some_value)
+
+Data structures.  A way to organize and store data
+
+1. List
+2. Dictionary
+
+Property            List                Dictionary
+
+structures          list =[value]       dict = { key: value}
+order               Ordered             Unordered
+Data                Limited             More Data
+
+
+3. Tuples
+
+4. Sets
+
+
+What is a good code?
+
+     1.   Clean
+     2.   Readable
+     3.   predictablity
+     4.   KISS (Keep it simple)
+     5.   DRY  (Don't repear your self)
+     
