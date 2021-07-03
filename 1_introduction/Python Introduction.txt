@@ -10,20 +10,21 @@ Python 3 was first introduced in 2008.
 Python 2 stopped being maintained and supported in 2020.
 
 
-compiler: Reads the whole file, then converts source code to machine code.
-translates all lines of a program to a file (usually called
-binary) and executes and whole file at once.
+compiler:
+    - Reads the whole file, then converts source code to machine code.
+    - translates all lines of a program to a file (usually called
+      binary) and executes and whole file at once.
 
 How does Python work?
 
-Python use an interpreter. an interpreter translate source line by line, and executes the line
-before going to the next one.
- - Python interpreter is a program written in C, that reads a python file and run it on a machine.
- - Python interpreter translates source code line by line, and executes the line before moving to the next one.
+ - Python uses an interpreter in order to convert source code to machine code.
+ - Python interpreter is a program written in C, that reads a python file and run
+   it on a machine.
+ - Python interpreter translates source code (Python script .py) line by line, and
+   executes the line before moving to the next one.
  - The Python interpreter creates a 'byte' code (we don't see it, it's behind the scene).
- - After that,the Python interpreter uses the CPython virtual machine (VM) to run the code, and
+ - Finally,the Python interpreter uses the CPython Virtual Machine (VM) to run the code, and
    then this code, will run on our machine.
-
 
 
 Python web dev
