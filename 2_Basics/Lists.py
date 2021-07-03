@@ -70,7 +70,7 @@ amazon_cart[0] = 'PC'
 print(amazon_cart)
 
 # creating a NEW copy list:
-new_cart = amazon_cart[:]
+new_cart = amazon_cart[:]   # or we can use .copy() instead of [:]. .cop() is discussed below.
 new_cart[1] = 'glasses'
 print(new_cart, '\n')
 
@@ -131,7 +131,8 @@ print(basket)
 
 print('')
 print('.remove()')
-# .remove() delete an item by providing its value (not index)
+# .remove() delete an item by providing its value (not index).
+# .remove() deleted the first match it finds but not all matching values.
 basket.remove(8)
 print(basket)
 print('')
@@ -159,5 +160,58 @@ print('')
 print('.count()')
 # .count() counts how many times a value occurred in a list
 print(fruits.count('banana'))
+
 print('')
 
+print('.sort()')
+# .sort() modifies the original list and sort it in an alphabetical order.
+print(f'Before sorting: {fruits}')
+fruits.sort()
+print(f'After sorting: {fruits}')
+print('')
+print('sorted() function vs .sort() method')
+new_fruits = sorted(fruits)
+print(new_fruits)
+# sorted() produces a NEW list without modifying the original one, like sort() method does.
+
+print('')
+print('.copy() method')
+# Creates a new copy of an existing list
+fruits_copy = fruits.copy()
+fruits_copy.append('blueberries')
+fruits_copy.pop(0)
+fruits_copy.remove('water melon')
+print(f'fruits list: {fruits}')
+print(f'fruits copy: {fruits_copy}')
+
+print('')
+print('.reverse()')
+# Reverses a list indexes order.
+fruits.remove('banana')
+fruits.reverse()
+# fruits[::-1] unlike .reverse(), slicing creates a new list and does not modify the original.
+print(fruits)
+
+print('')
+print('range(start, stop, step over)')
+# Create a list of a hundred numbers start at 1 and ending at 100
+hundred_list = list(range(1, 101))
+print(hundred_list)
+
+print('')
+print('.join()')
+# .join() is a String method
+# Quiz convert greet string to have - between each word.
+greet = 'Hi, my name is JOJO'
+greet_list = greet.split(" ")
+greet_string = "-".join(greet_list)
+greet_converted = greet_string.replace(',', '')
+print(greet_converted)
+
+print('')
+print('List unpacking')
+a, b, c, *other, d = [1, 2, 3, 4, 5, 6, 7, 8]
+print('a, b, c, *other, d = [1, 2, 3, 4, 5, 6, 7, 8]')
+print(f'a={a}, b={b}, c={c}')
+print(f'other={other}')
+print(f'd={d}')     # d r assigned to the last element in the list
