@@ -96,3 +96,28 @@ print(student_name.find('c'), '\n')   # returns the first occurrence it finds an
 print('replace()')
 print(student_name.replace('cole', 'coleman').title())
 
+print('')
+print('.isalnum()')
+# This method checks if all string character are alphanumeric (a-zA-z0-9)
+my_username = 'GoldiE75'
+print(my_username.isalnum())
+
+print('')
+print('.isalpha()')
+# .isalpha() checks if all string characters are alphabetical (a-zA-z)
+print(my_username.isalpha())
+
+print('')
+print('.isdigit()')
+# This method checks if all string character are digits (0-9)
+print('111212312523562340907'.isdigit())
+
+print('')
+print('.islower()')
+# This method checks if all string character are lowercase (a-z)
+print('gold smith'.islower())
+
+print('')
+print('.isupper()')
+# This method checks if all string character are uppercase (A-Z)
+print('GOLD SMITH'.isupper())

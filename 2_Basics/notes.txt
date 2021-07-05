@@ -22,13 +22,6 @@ Data Types
   None is the absence of value. Zero
 
 
-Developers Fundamentals
-
- - Learn a language by focusing on what matters, Not by memorizing everything.
- - Search, google, and again don't memorize code.
- - Learn how to search for information.
- -
-
 
 Best Practices
 

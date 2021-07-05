@@ -52,21 +52,47 @@ print(new_list.count(3))
 # Count how many a sub string appears in a string
 print('\n')
 
+# def count_substring(string, sub_string):
+#     """This function counts how many times a sub-string appears in a string"""
+#     counter = 0
+#     # iterate through string variable:
+#     for i in range(0, len(string)):
+#         if string[i:].startswith(sub_string):
+#             counter += 1
+#     return counter
+#
+#
+# if __name__ == '__main__':
+#     string = input('Enter a string: ').strip()
+#     sub_string = input('Enter a substring: ').strip()
+#     print('')
+#     count = count_substring(string, sub_string)
+#     print(count)
+#
 
-def count_substring(string, sub_string):
-    """This function counts how many times a sub-string appears in a string"""
-    counter = 0
-    # iterate through string variable:
-    for i in range(0, len(string)):
-        if string[i:].startswith(sub_string):
-            counter += 1
 
-    return counter
+# String Validators
+
+print('String Validators')
+my_name = 'qA2'
 
 
-if __name__ == '__main__':
-    string = input().strip()
-    sub_string = input().strip()
-    print('')
-    count = count_substring(string, sub_string)
-    print(count)
+def string_validator(string):
+    # any() function only works on iterable; so we will use List Comprehension
+    # to iterate through string elements
+    print(any(char.isalnum() for char in string))
+    print(any(char.isalpha() for char in string))
+    print(any(char.isdigit() for char in string))
+    print(any(char.islower() for char in string))
+    print(any(char.isupper() for char in string))
+
+
+string_validator(my_name)
+
+print('')
+# Check this dict, if it's keys & values characters contain any digits or alphanumeric
+# values.
+mydict = {'123': "Apple", 'ds': "Orange"}
+
+has_digit = [k.isdigit() and v.isalpha() for (k, v) in mydict.items()]
+print(has_digit)

@@ -33,7 +33,7 @@ Python web dev
 
 ASGI vs WSGI library
 web server gateway interface(WSGI)
-Still in early stages: (ASGI) for Asyncronuous tasks
+Still in early stages: (ASGI) for Asynchronous tasks
 
 
 Coding in Python
@@ -80,7 +80,7 @@ tuple     i.e basket = ("Apples", "Oranges", "Banana")
 set       i.e basket = {"Apples", "Oranges", "Banana"}
 dict      i.e basket = {
                {
-                    "dairy": ["Milk", "Yougurt", "White Cheese"],
+                    "dairy": ["Milk", "Yoghurt", "White Cheese"],
                     "Fruits": ["Apples", "Oranges", "Banana"],
                     "bread": "Brown Toast"
                }
@@ -94,7 +94,7 @@ dict      i.e basket = {
 None  # data type   like null or 0.. the absence of value.
 complex  # used for numbers, but it is rarely used.
 
-# bin  convernt decimal numbers to binary
+# bin converts decimal numbers to binary
 print(bin(7))
 
 print(int(0b111)) # convert a binary number back to decimal.
