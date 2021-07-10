@@ -54,3 +54,29 @@ bonus = my_list + [5]
 print(bonus)
 print(type(bonus))
 # >>> ['z', 2, 3]
+
+print('\n')
+
+
+# You are working for the school Principal. We have a database of school students:
+school = {'Bobby','Tammy','Jammy','Sally','Danny'}
+
+#during class, the teachers take attendance and compile it into a list.
+attendance_list = ['Jammy', 'Bobby', 'Danny', 'Sally']
+
+#using what you learned about sets, create a piece of code that the school principal
+# can use to immediately find out who missed class so they can call the parents.
+# (Imagine if the list had 1000s of students. The principal can use the lists generated
+# by the teachers + the school database to use python and make his/her job easier):
+# Find the students that miss class!
+
+# 1. No need to convert attendance_list to a set, but doing so won't harm either
+attendance_set = set(attendance_list)
+
+# 2. using difference() set method to find out who's missing from attendance_list:
+absent_students = school.difference(attendance_list)
+
+# 3. iterate over absent_students for a cleaner result (return it as a string)
+for student in absent_students:
+    print(f'The absent student(s) is/are:\n{student}')
+

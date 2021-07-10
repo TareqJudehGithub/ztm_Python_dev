@@ -22,7 +22,5 @@ Data Types
   None is the absence of value. Zero
 
 
-
-Best Practices
-
-Actions
+- Any value above 0, is True in Python.  (print(bool(1))) => True
+- Indentation in Python is mandatory
