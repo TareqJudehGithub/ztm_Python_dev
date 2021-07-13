@@ -95,6 +95,10 @@ dict_copy['cart'][0] = 'Cereal'     # 'Banana' => 'Cereal'
 dict_copy['password'] = '*******'   # add a new key-value pair at the end of the dict.
 print(dict_copy)
 
+print('\n')
+
+
+
 
 
 

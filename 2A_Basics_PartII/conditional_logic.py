@@ -36,12 +36,10 @@ Conditional Logic
 is_old = False
 is_licenced = True
 
-
 if is_old and is_licenced:
     print('You are old enough! you can drive now!')
 else:
     print('You are not old enough to drive.')
-
 
 print('\nPrint this no matter what the condition in the above if statement is.\n')
 
@@ -58,7 +56,6 @@ is_user = True
 if is_friend or is_user:
     print('best friends forever\n')
 
-
 # Operators : (Logical and Comparison)
 print('Operators : (Logical and Comparison)')
 print('a' > 'b')
@@ -68,7 +65,7 @@ print(5 is 5)
 print(not 1 == '1')
 
 print('\n')
-#Quiz:
+# Quiz:
 is_magician = True
 is_expert = True
 
@@ -83,14 +80,23 @@ elif is_magician and not is_expert:
 else:
     print('You are not a magician')
 
+print('\n')
 
+print('is vs ==')
+print('==')
+# == checks for equality of VALUE
+print(True == 1)        # True
+print('' == 1)          # False
+print([] == 1)          # False
+print(10 == 10.0)       # True == compares values
+print(10 is 10.0)       # False is compares places in memories
+print([] == [])         # True
 
-
-
-
-
-
-
-
-
-
+print('\nis')
+# is checks for location in memory where these values are stored is the same.
+print(True is 1)        # False  because True is True
+print('1' is 1)          # False '1'(str) is not 1(int)
+print([] is 1)          # False data structure vs int
+print(10 is 10.0)       # False different data types
+print(10 is 10)         # True  same data types
+print([] is [])         # False data structures: different location in memory

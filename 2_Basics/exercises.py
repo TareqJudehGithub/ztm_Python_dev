@@ -80,3 +80,24 @@ absent_students = school.difference(attendance_list)
 for student in absent_students:
     print(f'The absent student(s) is/are:\n{student}')
 
+print('\n')
+# dict quick quiz
+a = {'a': 1, 'b': 2, 'c': [1, 2, 3]}
+print(a['c'][1])
+
+print('\n')
+# Sets practice
+friends = {'Jack', 'Ali', 'Salem', 'Bernard', 'Sarah'}
+my_friends_list = {'Jack', 'Ali'}
+
+print(friends)
+not_in_my_list = friends.difference(my_friends_list)
+print(not_in_my_list)
+common_friends = friends.intersection(my_friends_list)
+print(common_friends)
+
+
+my_friends_list.add('Waleed')
+print(my_friends_list)
+
+print('\n')

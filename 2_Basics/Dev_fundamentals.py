@@ -15,6 +15,23 @@ Developer Fundamentals II
 Developer Fundamentals III
     Which Data Structure should we be using? And when?
     - That really depends on what the problem is and what it really needs.
--
+
+Developer Fundamentals IV
+    What is good code?
+    1. Code should be clean
+        - Code should follow the Python standards.
+        - Code should be well organized.
+    2. Code should be readable
+        - Other developer should understand your code when reading it.
+    3. Code should be descriptive
+        - Add comments before code explaining it.
+    4. Code should be predictable.
+        - Easy to understand.
+    5. Don't repeat your code (DRY)
+        - Implement functions making your code repeatable.
+        - declare variable instead of repeating same lines of code over and over.
+
+
+
 """
 
