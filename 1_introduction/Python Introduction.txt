@@ -1,19 +1,25 @@
 What is Python?
-xPython is a programming language, written by Guido van Rossum in 1991.
-What is a programming language? It is a set of instructions we give a translator, which
-can be either a compiler or interpreter. These translators allow us to give instructions to
-machines.
+ - Python is a programming language, written by Guido van Rossum in 1991.
+ - What is a programming language? It is a way for us to give a set of instructions we give to a computer.
 
-* A program is a set of instructions that tells the computer what to do.
+ -Computers speaks in 0/1 (binary)
+
+
+ * A program is a set of instructions that tells the computer what to do.
 
 Python 3 was first introduced in 2008.
 Python 2 stopped being maintained and supported in 2020.
 
-
-compiler:
+ Translator
+    - A program written by a human.
+    - A translator can be either a compiler or interpreter. These translators allow us to give instructions to
+    machines.
+  compiler:
     - Reads the whole file, then converts source code to machine code.
-    - translates all lines of a program to a file (usually called
+    - translates all lines of a program to a file (a file called usually called
       binary) and executes and whole file at once.
+  Interpreter
+    - Reads source code line by line, and execute each line before moving to the next one.
 
 How does Python work?
 

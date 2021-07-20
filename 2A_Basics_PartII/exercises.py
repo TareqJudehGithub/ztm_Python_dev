@@ -31,6 +31,7 @@
 # print(list_sum)
 #
 # print('\n')
+import typing
 
 print('\n')
 # loop exercise: GUI exercise
@@ -83,4 +84,46 @@ for i in dup_list:
 duplicates_str = "\n".join(duplicates)
 print(duplicates_str, end='\n')
 
+print('\n')
+# Tesla exercise
+print('Tesla exercise')
 
+
+#1. Wrap the above code in a function called checkDriverAge(). Whenever you call this function, you will get prompted for age.
+# Notice the benefit in having checkDriverAge() instead of copying and pasting the function everytime?
+def checkDriverAge(age=0):
+    # age = int(input('Please enter you age: '))
+    if int(age) < 18:
+        return "Sorry, you are too young to drive this car. Powering off"
+    elif int(age) > 18:
+        return "Powering On. Enjoy the ride!"
+    elif int(age) == 18:
+        return "Congratulations on your first year of driving. Enjoy the ride!"
+
+#2 Instead of using the input(). Now, make the checkDriverAge() function accept an argument of age, so that if you enter:
+#checkDriverAge(92);
+print(checkDriverAge(46))
+#it returns "Powering On. Enjoy the ride!"
+#also make it so that the default age is set to 0 if no argument is given.
+
+
+print('\n')
+# Create a function called highest_even that will take a list of numbers as a parameter.
+# highest_even should return the highest even number in the list.
+def highest_even(my_list: typing.List) -> int:
+    # solution the pythonic way:
+    even = list()
+    for i in my_list:
+        if i % 2 == 0:
+            even.append(i)
+    return max(even)
+
+    # solution old school  way:
+    # highest_num = 0
+    # for i in my_list:
+    #     if i % 2 == 0 and i > highest_num:
+    #         highest_num = i
+    # return highest_num
+
+
+print(highest_even([11, 10, 4, 8, 9, 15, 16, 17, 20, 26]))
