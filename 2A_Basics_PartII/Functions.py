@@ -1,4 +1,5 @@
 import typing
+
 """
 Functions
     - functions eliminates code repetition
@@ -31,6 +32,30 @@ Functions
     - *args and **kwargs
     - Parameters and arguments order:
         params, *args, default params (name='John'), **kwargs
+    - Scopes.  Who has access to who?
+        - Scopes reserves resources like memories(RAM), help prevent crashes, and run our
+          application efficiently.
+        - Python interpreter execution rules it follows:
+            1. *local scope. Return the local scope if found
+            2. Parent local scope. Return the Parent local scope.
+            3. Global scope. if neither a local or a parent local scope were founds, then
+               return the global scope.
+            4. Built-in defined functions.
+                  
+        - global keyword. A way to access global variables inside functions. However, global
+          keyword usage can be confusing as files get bigger and bigger. A better way is to 
+          use dependencies injections by using the global variable as parameter for the 
+          function.
+        - nonlocal keyword. Assigns a new value to parent/local variable. Again, try avoiding
+          the nonlocal keyword as it causes confusion and makes code less predictable and less
+          clean.
+        
+            
+    
+    * Local scope is a scope that is a part of a function.
+    
+        
+    
 
 
 
@@ -78,6 +103,7 @@ print(arithmetic(5, 5))
 
 print('\n')
 
+
 # The below function here edits a variable (ele list)
 def edit_list():
     ele[0] = 45
@@ -89,6 +115,8 @@ print(ele)
 
 print('\n')
 print('Clear code')
+
+
 # clean code
 
 def is_odd_or_even(num):
@@ -102,9 +130,10 @@ def is_odd_or_even(num):
 
 print(is_odd_or_even(22))
 
-
 print('\n')
 print('*args and **kwargs')
+
+
 def super_func(name: str, *args: int, friend='ali', **kwargs: int):
     """return the sum of all arguments"""
     print(name, friend)
@@ -117,10 +146,69 @@ def super_func(name: str, *args: int, friend='ali', **kwargs: int):
 
 print(super_func('john', 1, 3, 4, 5, 7, friend='micheal', num1=5, num2=10))
 
+print('\n')
+# scope
+print('scope')
 
+total = 200  # global scope
+
+
+def total_func():
+    total = 100  # local scope
+
+
+print(total, '\n')  # >>> 200
+
+a = 1  # global scope
+
+
+def parent():
+    a = 10  # parent local scope
+
+    def confusion():
+        return a
+
+    return confusion()  # local scope
+
+
+print(parent())
+print(a)
+print('\nglobal keyword')
+total = 0
+
+
+def count():
+    global total
+    total += 1
+    return total
+
+
+print(count())
+print('')
+counter = 0
+
+def count2(counter):
+    counter += 5
+    return counter
+
+
+print(count2(counter))
+print('')
+print('nonlocal keyword')
+def outer():
+    x = 'local'
+
+    def inner():
+        nonlocal x
+        x = 'nonlocal'
+        print('inner: {}'.format(x))
+    print('outer: {}'.format(x))
+    inner()
+
+
+outer()
 
 print('\n')
-
+print(format(1000, '0.2f'))
 print('\n')
 
-print('\n')

@@ -127,3 +127,5 @@ def highest_even(my_list: typing.List) -> int:
 
 
 print(highest_even([11, 10, 4, 8, 9, 15, 16, 17, 20, 26]))
+
+print('\n')

@@ -96,7 +96,7 @@ print(set_A | set_B, '\n')
 set_A = {4, 5, 6, 7, 8, 9, 10}
 set_B = {4, 5, 6, 7, 8}
 
-# update() overrides the first set contents with the other set.
+# update() overrides/combines the first set contents with the other set.
 print('update()')
 set_A.update(set_B)
 print(set_A, '\n')
