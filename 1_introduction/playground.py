@@ -73,26 +73,40 @@ print('\n')
 
 # String Validators
 
-print('String Validators')
-my_name = 'qA2'
+# print('String Validators')
+# my_name = 'qA2'
+#
+#
+# def string_validator(string):
+#     # any() function only works on iterable; so we will use List Comprehension
+#     # to iterate through string elements
+#     print(any(char.isalnum() for char in string))
+#     print(any(char.isalpha() for char in string))
+#     print(any(char.isdigit() for char in string))
+#     print(any(char.islower() for char in string))
+#     print(any(char.isupper() for char in string))
+#
+#
+# string_validator(my_name)
+#
+# print('')
+# # Check this dict, if it's keys & values characters contain any digits or alphanumeric
+# # values.
+# mydict = {'123': "Apple", 'ds': "Orange"}
+#
+# has_digit = [k.isdigit() and v.isalpha() for (k, v) in mydict.items()]
+# print(has_digit)
 
+print('\n')
+# Introduction to Sets problem
 
-def string_validator(string):
-    # any() function only works on iterable; so we will use List Comprehension
-    # to iterate through string elements
-    print(any(char.isalnum() for char in string))
-    print(any(char.isalpha() for char in string))
-    print(any(char.isdigit() for char in string))
-    print(any(char.islower() for char in string))
-    print(any(char.isupper() for char in string))
+def average(array):
+    # your code goes here
+    new_set = set(array)
+    return round(sum(new_set) / len(new_set), 3)
 
-
-string_validator(my_name)
-
-print('')
-# Check this dict, if it's keys & values characters contain any digits or alphanumeric
-# values.
-mydict = {'123': "Apple", 'ds': "Orange"}
-
-has_digit = [k.isdigit() and v.isalpha() for (k, v) in mydict.items()]
-print(has_digit)
+if __name__ == '__main__':
+    n = int(input('Enter the total of numbers: '))
+    arr = list(map(int, input('Enter numbers here: ').split()))
+    result = average(arr)
+    print(result)
