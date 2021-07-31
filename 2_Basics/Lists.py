@@ -20,7 +20,6 @@ Lists
  - A method is a function of an object.
  - printing a list method returns None.  Example: print(basket.append(10))
 
-
  * Data structure is a way to organize data and store it into a contained fashion.
 
 
@@ -61,7 +60,7 @@ print(amazon_cart[0:2])
 # return all items using slicing:
 print(amazon_cart[::])
 
-# step over elements bu 2
+# step over elements by 2
 print(amazon_cart[::2])
 print(amazon_cart[1::2])
 
@@ -70,14 +69,16 @@ amazon_cart[0] = 'PC'
 print(amazon_cart)
 
 # creating a NEW copy list:
-new_cart = amazon_cart[:]   # or we can use .copy() instead of [:]. .cop() is discussed below.
+new_cart = amazon_cart[:]   # or we can use .copy() instead of [:]. .cop() will b discussed
+# later.
 new_cart[1] = 'glasses'
 print(new_cart, '\n')
 
 # Matrix
 print('Matrix')
 """
-Matrix is what we call a list that has other lists inside it as elements (a two-dimensional list).
+Matrix is what we call a list that has other lists inside it as elements (a two-dimensional 
+list).
 """
 matrix = [
     [1, 2, 3],

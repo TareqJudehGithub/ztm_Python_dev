@@ -31,6 +31,10 @@ Developer Fundamentals IV
         - Implement functions making your code repeatable.
         - declare variable instead of repeating same lines of code over and over.
 
+Developer Fundamental V
+    Test your assumptions
+     - Test your learning, do print(), play around with your code, and understand
+       whats really happening behind the scene.
 
 
 """
