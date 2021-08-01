@@ -56,3 +56,5 @@ print('for loop')
 # for loop
 for char in [wizard_1, archer_1]:
     char.attack()
+
+

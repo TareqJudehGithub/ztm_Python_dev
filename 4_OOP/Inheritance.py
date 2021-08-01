@@ -4,6 +4,7 @@ Inheritance
  - classes inheriting from a class, is called sub-classes or derived classes.
  - isinstance is a built-in  function in Python, that returns a bool value
    whether an instance is part of a class or not.
+ - issubclass() checks if class is a sub class of another list.
 """
 
 
@@ -42,6 +43,12 @@ wizard_1.sign_in()
 
 print('')
 print('isinstance()')
+
 print(isinstance(wizard_1, User))
 print(isinstance(archer_1, Archer))
 print(isinstance(wizard_1, Archer))
+
+print('')
+# issubclass()
+print(issubclass(Wizard, User))
+
