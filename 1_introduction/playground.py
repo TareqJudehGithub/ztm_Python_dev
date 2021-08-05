@@ -100,13 +100,52 @@ print('\n')
 print('\n')
 # Introduction to Sets problem
 
-def average(array):
-    # your code goes here
-    new_set = set(array)
-    return round(sum(new_set) / len(new_set), 3)
+# def average(array):
+#     # your code goes here
+#     new_set = set(array)
+#     return round(sum(new_set) / len(new_set), 3)
+#
+# if __name__ == '__main__':
+#     n = int(input('Enter the total of numbers: '))
+#     arr = list(map(int, input('Enter numbers here: ').split()))
+#     result = average(arr)
+#     print(result)
+
+print('\n')
+
+# Finding the percentage
+print('Finding the percentage')
+
+# 'John': [52, 56, 60]
+# student_marks = dict()
+# # print(len(student_marks.values()))
+# marks = list()
+
+# def avg_marks():
+#
+#     for k, v in student_marks.items():
+#         for i in v:
+#             marks.append(i)
+#
+#     return sum(marks) / len(marks)
+#     # return sum(student_marks.values()) / len(student_marks.values())
+#
+#
+# print(avg_marks())
 
 if __name__ == '__main__':
-    n = int(input('Enter the total of numbers: '))
-    arr = list(map(int, input('Enter numbers here: ').split()))
-    result = average(arr)
-    print(result)
+    n = int(input('score total: '))
+    student_marks = {}
+    marks = list()
+    for _ in range(n):
+        name, *line = input('Scores: ').split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input('query: ')
+
+    for k, v in student_marks.items():
+        if k == query_name:
+            print(format(sum(v)/len(v), '0.2f'))
+
+
+    # print(sum(marks) / len(marks))

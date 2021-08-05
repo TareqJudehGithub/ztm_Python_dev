@@ -155,11 +155,6 @@ even_list = list()
 def even_sum(acc, x):
     return acc + x
 
-    # if x % 2 == 0:
-    #     even_list.append(x)
-    # print(even_list)
-    # return sum(even_list)
-
 
 sum_of_even = reduce(even_sum, list_3)
 
