@@ -52,4 +52,5 @@ class GuessingGame:
                     continue
 
 
-GuessingGame()
+if __name__ == '__main__':
+    GuessingGame()
