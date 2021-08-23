@@ -36,6 +36,12 @@ Developer Fundamental V
      - Test your learning, do print(), play around with your code, and understand
        whats really happening behind the scene.
 
+Developer Fundamental VI
+    Pros and cons of libraries
+    - We need to develop a skill to be able to distinguish between a good and a
+      bad package, or resource demanding or light.
+    - Import libraries that saves us time writing code.
+
 
 """
 
