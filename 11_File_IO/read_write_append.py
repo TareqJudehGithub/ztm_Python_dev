@@ -1,10 +1,14 @@
 """
  - mode='r'     read file.  Mode is read by default
  - mode='r+'    read and write to file.
- - mode='w'     writes to file. automatically creates the file if not already exist.
+ - mode='w'     writes to file. automatically creates the file if not already
+                exist, and overrides existing one.
  - mode='a'     write new lines to an existing file.
 
 """
+from pathlib import Path
+
+p = Path('.')
 print('\n')
 print('file A')
 
@@ -25,7 +29,7 @@ print('\n')
 
 print('file C')
 # .write()
-with open('file_C.txt', mode='w') as file:
+with open('files/file_C.txt', mode='w') as file:
     file.write('This is file C!')
 
 print('\n')
@@ -34,5 +38,11 @@ print('\n')
 
 print('\n')
 
-with open('file_C.txt', mode='a') as file:
+with open('files/file_C.txt', mode='a') as file:
     file.write('\nAdding new line to file C using append() method!')
+
+
+# Accessing files from other parent folder
+
+with open('../files_folder_root/file_D.txt', mode='w') as file:
+    file.writelines('This is file D!\n2nd line: hi there! \n3rd line: Hello world!')
