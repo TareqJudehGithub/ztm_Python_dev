@@ -42,6 +42,9 @@ Developer Fundamental VI
       bad package, or resource demanding or light.
     - Import libraries that saves us time writing code.
 
+Developer Fundamentals VII
+    Pick the right library
+
 
 """
 
