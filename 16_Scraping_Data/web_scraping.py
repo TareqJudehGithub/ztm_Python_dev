@@ -93,7 +93,11 @@ if response.status_code == 200:
       points_list[index] = int(point)
   #   point[index] = int(point)
   
-  print(points_list)
+  print(" ")
+  print("subtext")
+  # In HackerNews, .subtext class is the points selector
+  subtext = soup.select(".subtext")[28].get_text()
+  print(subtext)
 
 
     # int_points = int(all_points[index].getText().replace(" point", ""))

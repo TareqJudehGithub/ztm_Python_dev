@@ -67,5 +67,34 @@ def create_custom_hn(links, votes):
 
     print(points)
     print(type(points))
-    
 
+
+  """
+  - In case we needed to scrape a 2nd page, 3rd, or even more
+    
+    1. declare a new API response variable with adding string "p=#"
+      api_response_p1 = requests.get(url="https://news.ycombinator.com/news?")
+      api_response_p2 = requests.get(url="https://news.ycombinator.com/news?p=2")
+    
+    2. make clone variable of the selector and add them together in ur scraping
+    function.
+      soup_p1 = BeautifulSoup(ap_response_p1, "html.parser")
+      soup_p2 = BeautifulSoup(ap_response_p2, "html.parser")
+
+    # article selector
+    links_p1 = soup_p1.select(".storylink")
+    link_p2 = soup_p1.select(".storylink")
+
+    # points(votes) selector
+    subtext_p1 = soup_p1.select(".subtext")
+    subtext_p2 = soup_p2.select(".subtext")
+
+    all_links = links_p1 + link2_p2
+    all_subtexts = subtext_p1 + subtext_p2
+
+  
+  def scrap_function():
+
+
+  scrap_function(all_links, all_subtexts)
+  """
