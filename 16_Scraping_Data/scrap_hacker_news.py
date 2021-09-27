@@ -20,7 +20,7 @@ else:
 def sort_stories(hn_list):
   """sort stories by points"""
   # sort stories by points in a descending order
-  return sorted(hn_list, key=lambda k: k["points"])
+  return sorted(hn_list, key=lambda k: k["points"], reverse=True)
 
 
 def create_custom_hn(links, subtext):
