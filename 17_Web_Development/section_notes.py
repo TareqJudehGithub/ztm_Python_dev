@@ -60,4 +60,8 @@ Virtual Environment
    $ export FLASK_ENV=development
    $ flask run
 
+  - redirct("/html page") 
+    redirct() unlike render_template, takes no variable
+    
 """
+

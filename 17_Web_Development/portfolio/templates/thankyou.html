@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='./main.d8e0d294.css') }}"
+		/>
+		<link
+			rel="icon shortcut"
+			href="{{ url_for('static', filename='./assets/apple-icon-180x180.png') }}"
+		/>
+		<title>My Portfolio</title>
+	</head>
+	<body>
+		<h1>Thank you for your message</h1>
+		<p><a href="./index.html">Homepage</a></p>
+
+		<!--Thank you message-->
+		{% if name: %}
+		<p>Thank you {{name | title }}</p>
+		{% endif%}
+
+		<script type="text/javascript" src="../static/main.bc58148c.js"></script>
+	</body>
+</html>
