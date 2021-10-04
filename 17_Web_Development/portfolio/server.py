@@ -18,14 +18,19 @@ def html_page(page_name):
 @app.route("/submit_form", methods=["POST", "GET"])
 def submit_form(name=None):
   if request.method == "POST":  # check with HTML form method attrib
-
-    # request data submitted and save it as a dict
-    data = request.form.to_dict()
-    name = data["name"]
-
-    # write_to_txt(data)
-    write_to_csv(data)
-    return render_template("/thankyou.html", name=name)
+   
+    try:
+      # request data submitted and save it as a dict
+      data = request.form.to_dict()
+      name = data["name"]
+    
+    except:
+      return "Form submission failed!"
+    
+    else:
+      # write_to_txt(data)
+      write_to_csv(data)
+      return render_template("/thankyou.html", name=name)
 
   else:
     return "Error submitting form!"
