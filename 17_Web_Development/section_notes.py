@@ -17,7 +17,7 @@ Virtual Environment
       the virtual environment files in.
 - Activate the environment
     Before you work on your project, activate the corresponding environment:
-      $ venv/Scripts/activate
+      $ source venv/Scripts/activate
 
 - Install flask
   Within the activated environment, use the following command to install Flask:
