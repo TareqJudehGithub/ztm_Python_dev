@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="957cb1ab-d9bf-426f-9659-22d92c3c7b87" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/python_course_21.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_course_21.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_Web_Development/portfolio/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/17_Web_Development/portfolio/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_Web_Development/portfolio/static/main.d8e0d294.css" beforeDir="false" afterPath="$PROJECT_DIR$/17_Web_Development/portfolio/static/main.d8e0d294.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_Web_Development/portfolio/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/17_Web_Development/portfolio/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +18,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -37,9 +52,10 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Estefania/python_oop_course" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Ardit_Sulce_Udemy/Python_Mega" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -125,7 +141,32 @@
       <workItem from="1628800320432" duration="174000" />
       <workItem from="1629040980511" duration="1030000" />
       <workItem from="1629042189896" duration="10459000" />
-      <workItem from="1629115962428" duration="2413000" />
+      <workItem from="1629115962428" duration="2795000" />
+      <workItem from="1629125324520" duration="10210000" />
+      <workItem from="1629586476501" duration="478000" />
+      <workItem from="1629633333876" duration="10250000" />
+      <workItem from="1629733994463" duration="5436000" />
+      <workItem from="1629797800687" duration="12858000" />
+      <workItem from="1629830273227" duration="1480000" />
+      <workItem from="1630082162115" duration="1259000" />
+      <workItem from="1630145811676" duration="4554000" />
+      <workItem from="1630162589331" duration="10677000" />
+      <workItem from="1630228396705" duration="14978000" />
+      <workItem from="1630318609235" duration="1854000" />
+      <workItem from="1630327199048" duration="1671000" />
+      <workItem from="1630336500303" duration="4000" />
+      <workItem from="1630532309083" duration="1172000" />
+      <workItem from="1630788833547" duration="162000" />
+      <workItem from="1631093680038" duration="49000" />
+      <workItem from="1631229647102" duration="1368000" />
+      <workItem from="1631697960026" duration="3592000" />
+      <workItem from="1631701655695" duration="42000" />
+      <workItem from="1631701723960" duration="2411000" />
+      <workItem from="1631731288302" duration="1330000" />
+      <workItem from="1632767558137" duration="123000" />
+      <workItem from="1632770937605" duration="124000" />
+      <workItem from="1632784509297" duration="300000" />
+      <workItem from="1632912752562" duration="9000" />
     </task>
     <servers />
   </component>

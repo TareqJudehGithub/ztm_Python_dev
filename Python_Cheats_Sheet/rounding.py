@@ -16,3 +16,15 @@ More on:
     https://kodify.net/python/math/round-integers/
     
 '''
+
+score = 10.541546
+score_round = round(score, 2)
+score_format = format(score, "0.2f")
+print(score_format)
+score_f_string = f"{score:.2f}"
+print(score_f_string)
+
+print(type(score_round), type(score_format), type(score_f_string))
+
+
+
