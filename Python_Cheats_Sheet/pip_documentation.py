@@ -8,7 +8,7 @@ pip
 """ 
 # installation
 
-# $ pip install --upgrade --pip
+# $ python - m pip install --upgrade --pip
 # download the latest get-pip.py script and run it.
 
 """
