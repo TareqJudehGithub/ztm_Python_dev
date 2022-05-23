@@ -41,7 +41,7 @@ first_name = 'john'
 last_name = 'smith'
 
 # string concatenation:
-
+# Python does not support concatenation between different types.
 print('string concatenation')
 full_name = first_name + "" + last_name
 full_name_f = f"{first_name} {last_name}"

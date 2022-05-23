@@ -1,6 +1,7 @@
 What is Python?
  - Python is a programming language, written by Guido van Rossum in 1991.
- - What is a programming language? It is a way for us to give a set of instructions we give to a computer.
+ - What is a programming language? It is a way for us to give a set of instructions we 
+   give to a computer.
 
  -Computers speaks in 0/1 (binary)
 

@@ -3,6 +3,7 @@ Lists
  - List is sequenced order of values of any type.
  - List is a part of the *Data Structure.
  - List are mutable.
+ - Keep list elements homogeneous (of the same type).
  - Copy VS Modify:
      - If we assigned a new variable list to our original list, then any
        modification to the new list, will also affect the original list; because
@@ -16,13 +17,11 @@ Lists
 
  - Matrix is what we call a list that has other lists inside it as elements.
  - Matrix is a two-dimensional lists.
- - List methods modify an existing list, but does not returns it not it creates a new copy.
+ - List methods modify an existing list, but does not returns it nor it creates a new copy.
  - A method is a function of an object.
  - printing a list method returns None.  Example: print(basket.append(10))
 
  * Data structure is a way to organize data and store it into a contained fashion.
-
-
 """
 # Lists format
 my_list = list([1, 2, 3, 4, 5])

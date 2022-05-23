@@ -6,7 +6,8 @@ Escape Characters
 
   
 
-  \'	  Single Quote	
+  \'	  Single quote	
+  \"    double quote
   \\	  Backslash	
   \n	  New Line	
   \r	  Carriage Return	

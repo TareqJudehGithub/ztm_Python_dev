@@ -3,8 +3,15 @@ Data Types in Python
 
 int
     integer  => a whole number
+    for integer values
 float
     a number with decimals
+    for decimal or floating point values
+    
+    int vs float
+     - Use int for counting, age, and dates.
+     - use float for more precise results like mathematical operations.
+    
 """
 
 # integer example

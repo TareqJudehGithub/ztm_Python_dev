@@ -1,6 +1,7 @@
 """
 Variables
  - Variables are a way for us to store information.
+ - Python is dynamic programming language.
  - We assign (bind) values to variables. Example: number = 10
  - Variables values are stored in memory in a form of binary.
  - Variables in Python are snake_case.  example: first_name

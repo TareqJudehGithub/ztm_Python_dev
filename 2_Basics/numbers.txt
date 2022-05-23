@@ -1,0 +1,2 @@
+Integer (whole numbers)           100
+decimal (numbers with fractions)  100.5
